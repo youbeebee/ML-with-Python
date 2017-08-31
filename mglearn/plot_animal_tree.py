@@ -5,10 +5,11 @@ import matplotlib.pyplot as plt
 def plot_animal_tree(ax=None):
     import graphviz
     if ax is None:
-        ax = plt.gca()
-    mygraph = graphviz.Digraph(node_attr={'shape': 'box'},
+        ax = plt.gca(figsize=(15,15))
+
+    mygraph = graphviz.Digraph(node_attr={'shape': 'rectangle', 'fontname': 'consolas.ttf'},
                                edge_attr={'labeldistance': "10.5"},
-                               format="png")
+                               format="png", encoding="utf-8")
     mygraph.node("0", "날개가 있나요?")
     mygraph.node("1", "날 수 있나요?")
     mygraph.node("2", "지느러미가 있나요?")
@@ -22,6 +23,7 @@ def plot_animal_tree(ax=None):
     mygraph.edge("1", "4", label="False")
     mygraph.edge("2", "5", label="True")
     mygraph.edge("2", "6", label="False")
+    mygraph.attr(fontname="consolas.ttf")
     mygraph.render("tmp")
     ax.imshow(imread("tmp.png"))
     ax.set_axis_off()
