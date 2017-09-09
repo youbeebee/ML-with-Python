@@ -4,7 +4,7 @@
 
 ## 예제코드 github
  * https://github.com/rickiepark/introduction_to_ml_with_python
-   * or : https://goo.gl/k3WmwQ
+   * or : https://goo.gl/k3WmwQ (https://nbviewer.jupyter.org/github/rickiepark/introduction_to_ml_with_python/tree/master/)
 
 ## Jupyter Notebook 사용하기
 https://www.slideshare.net/dahlmoon/jupyter-notebok-20160815
